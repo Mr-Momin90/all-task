@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ludo Board</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, green, #0070c0, red, orange);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .board {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .board td {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dice td {
+            width: 50px;
+            height: 50px;
+        }
+
+        .center {
+            background: conic-gradient(green, yellow, blue, purple, red, green);
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 align="center">LUDO GAME</h1>
+
+<table class="board" align="center" border="1" cellspacing="0"
+       cellpadding="0" bgcolor="white">
+
+    <!-- Green Home -->
+
+    <tr>
+
+        <td colspan="6" rowspan="6" bgcolor="green" align="center">
+
+            <table class="dice" bgcolor="#006400" cellspacing="10">
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <!-- Yellow Home -->
+
+        <td colspan="6" rowspan="6" bgcolor="gold" align="center">
+
+            <table class="dice" bgcolor="#ffd700" cellspacing="10">
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="gold"></td>
+        <td bgcolor="gold"></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="gold"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="gold"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="gold"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="gold"></td>
+        <td></td>
+    </tr>
+
+
+    <!-- Middle -->
+
+    <tr>
+
+        <td></td>
+        <td bgcolor="green"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td class="center" colspan="3" rowspan="3"></td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+
+    <tr>
+
+        <td></td>
+        <td bgcolor="green"></td>
+        <td bgcolor="green"></td>
+        <td bgcolor="green"></td>
+        <td bgcolor="green"></td>
+        <td bgcolor="green"></td>
+
+        <td bgcolor="#0070c0"></td>
+        <td bgcolor="#0070c0"></td>
+        <td bgcolor="#0070c0"></td>
+        <td bgcolor="#0070c0"></td>
+        <td bgcolor="#0070c0"></td>
+        <td></td>
+
+    </tr>
+
+    <tr>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td bgcolor="#0070c0"></td>
+        <td></td>
+
+    </tr>
+
+
+    <!-- Red Home -->
+
+    <tr>
+
+        <td colspan="6" rowspan="6" bgcolor="red" align="center">
+
+            <table class="dice" bgcolor="#c0201e" cellspacing="10">
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+
+        <td></td>
+        <td bgcolor="red"></td>
+        <td></td>
+
+        <!-- Blue Home -->
+
+        <td colspan="6" rowspan="6" bgcolor="#0070c0" align="center">
+
+            <table class="dice" bgcolor="#00508f" cellspacing="10">
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+
+                    <td align="center">
+                        <font color="white" size="6">&#9679;</font>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="red"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="red"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td bgcolor="red"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td bgcolor="red"></td>
+        <td bgcolor="red"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
