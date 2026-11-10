@@ -1,0 +1,27 @@
+ CSS COMBINATORS
+
+CSS combinators are used to define relationships between elements and help us select specific elements based on their positions in HTML.
+
+ 1. Descendant Combinator (Space)
+
+The descendant combinator selects all elements that are placed inside a specified parent element, even if they are nested deeply.
+
+For example, if we create a `div` and place paragraphs inside it, then write `div p` in CSS, all paragraphs inside that div will receive the given background color.
+
+ 2. Child Combinator (>)
+
+The child combinator selects only the direct children of a specified element. It does not select elements nested inside other children.
+
+For example, if we create a `div` containing two paragraphs, both paragraphs will get the background color when we use `div > p` in CSS. However, paragraphs inside another nested element will not be selected.
+
+ 3. Adjacent Sibling Combinator (+)
+
+The adjacent sibling combinator selects only the element that comes immediately after another specified element.
+
+For example, if we write `h2 + p` in CSS, only the first paragraph directly after the `h2` heading will receive the background color. Any paragraph appearing after that will remain unchanged.
+
+ 4. General Sibling Combinator (~)
+
+The general sibling combinator selects all matching sibling elements that come after a specified element.
+
+For example, if we write `h2 ~ p` in CSS, all paragraphs that appear after the `h2` heading at the same parent level will receive the background color, even if other elements appear between them.

@@ -1,0 +1,15 @@
+.descendant p {
+  background-color: lightblue;
+}
+
+.child > p {
+  background-color: yellow;
+}
+
+.adjacent h2 + p {
+  background-color: rgb(38, 0, 255);
+}
+
+.general h2 ~ p {
+  background-color: rgb(255, 30, 0);
+}
